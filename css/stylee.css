@@ -284,6 +284,7 @@ footer {
     font-size: large;
     direction: rtl;
 }
+
 .card {
     display: flex;
     justify-content: space-between;
@@ -304,4 +305,139 @@ footer {
 
 .card-img-top {
     width: 90%;
+}
+
+/* MEDIA QUERIES */
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    padding: 10px;
+}
+
+@media screen and (max-width: 1152px) {
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar ul li {
+        margin-bottom: 10px;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar ul {
+        padding: 0;
+    }
+
+    .navbar ul li {
+        font-size: 14px;
+    }
+
+    .cards img {
+        width: 100%;
+        height: auto;
+    }
+
+    .cards div h2,
+    h3 {
+        text-align: center;
+    }
+
+    .pie {
+        text-align: center;
+    }
+
+    .contenido-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sociales img {
+        width: 70%;
+        height: max-content;
+
+    }
+
+    .mapa {
+        width: 50%
+    }
+
+    .card-text,
+    .card-title {
+        text-align: center;
+
+    }
+
+    .card-img-top {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .cards {
+        gap: 15px;
+    }
+
+    .tragosc .cards div h2,
+    h3 {
+        font-size: 14px;
+    }
+
+    .pie h2 {
+        font-size: 18px;
+    }
+
+    .ubicacion-section p {
+        font-size: 14px;
+    }
+
+    .logo-section img {
+        width: 50%
+            /* Ajusta el tamaño del logo para móviles */
+    }
+
+    .flecha {
+        display: none;
+    }
+
+    .card {
+        gap: 15px;
+    }
+
+    .card-title,
+    .card-text {
+        font-size: 12px;
+    }
+
 }
