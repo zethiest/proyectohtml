@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400..900&display=swap");
+footer {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto;
+  gap: 15px;
+  padding: 20px;
+}
+
+.titulo {
+  grid-column: 1/-1;
+  color: #FFFFFF;
+  font-size: xx-large;
+  text-align: center;
+}
+
+.contenido-footer {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 30px;
+  width: 100%;
+}
+
+.redes-section {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 0px 0px 0px 0px;
+  gap: 20px;
+}
+
+.sociales {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 10px;
+}
+
+.ubicacion-section {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  font-size: x-large;
+  color: #FFFFFF;
+}
+
+.mapa {
+  margin-top: 10px;
+  width: 350px;
+  height: 300px;
+}
+
+.logo-section {
+  grid-column: 1/-1;
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+}
+
+.flecha {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: transparent;
+}
+
+h1 {
+  background-color: #000000;
+  color: #FFD700;
+  text-align: center;
+  height: min-content;
+  padding: 0px;
+}
+
+.navbar ul {
+  background-color: #000000;
+  padding: 10px;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  height: max-content;
+}
+
+.navbar a {
+  color: #FFD700;
+  text-decoration: none;
+  display: flex;
+  font-size: large;
+}
+
+.navbar a:hover {
+  background-color: #000000;
+  color: #FFD700;
+}
+
+.main-index img {
+  width: 100%;
+}
+
+.main-index h2 {
+  color: #FFD700;
+  text-align: center;
+}
+
+.main-index h3 {
+  color: #FFFFFF;
+  text-align: center;
+  padding: 0;
+}
+
+.main-index h4 {
+  color: #FFD700;
+  text-align: center;
+}
+
+.firma {
+  color: #FFFFFF;
+  text-align: end;
+  margin-right: 20px;
+  font-size: large;
+}
+
+.main-comida {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tablas h2 {
+  color: #FFD700;
+  padding: 50px 0 0 0;
+  font-size: xx-large;
+}
+.tablas h3 {
+  color: #FFD700;
+  padding: 6px;
+  text-align: left;
+}
+.tablas p {
+  padding: 5px;
+  color: #FFFFFF;
+  font-size: large;
+}
+
+.compartir h2 {
+  color: #FFD700;
+  padding: 50px 0 0 0;
+  font-size: xx-large;
+  text-align: right;
+}
+.compartir h3 {
+  color: #FFD700;
+  padding: 10px;
+  font-size: x-large;
+  direction: rtl;
+}
+.compartir p {
+  color: #FFFFFF;
+  font-size: large;
+  direction: rtl;
+}
+
+body {
+  background-color: #000000;
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=main.css.map */
