@@ -1,17 +1,432 @@
-/* Error: Can't find stylesheet to import.
- *    ,
- * 10 | @import 'components/main';
- *    |         ^^^^^^^^^^^^^^^^^
- *    '
- *   scss\main.scss 10:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a    \2577 \a 10 \2502  @import 'components/main';\d\a    \2502          ^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\main.scss 10:9  root stylesheet";
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400..900&display=swap");
+/* Aquí irían los estilos generales de tu sitio */
+h1 {
+  background-color: #000000;
+  color: #FFD700;
+  text-align: center;
+  height: min-content;
+  padding: 0px;
 }
+
+.navbar ul {
+  background-color: #000000;
+  color: #FFD700;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  height: max-content;
+}
+.navbar a {
+  color: #FFD700;
+  text-decoration: none;
+  display: flex;
+  font-size: large;
+}
+.navbar a:hover {
+  background-color: #000000;
+  color: #FFD700;
+}
+
+.header {
+  background-color: #FFD700;
+  color: #FFFFFF;
+  border: 2px solid #FFD700;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  margin: 0;
+  overflow: hidden;
+}
+.navbar ul li {
+  margin-bottom: 10px;
+}
+.navbar ul a {
+  color: #FFD700;
+  text-decoration: none;
+  display: flex;
+  font-size: large;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  box-sizing: border-box;
+}
+.cards img {
+  width: 100%;
+  height: auto;
+}
+.cards div h2,
+.cards h3 {
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .flecha {
+    display: none;
+  }
+  .card {
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .card .card-img-top {
+    width: 80%;
+  }
+  .card .card-title {
+    font-size: 1.25rem;
+  }
+  .card .card-text {
+    font-size: 0.875rem;
+  }
+}
+@media screen and (max-width: 760px) {
+  .navbar ul {
+    padding: 0;
+  }
+  .flecha {
+    display: none;
+  }
+  .navbar ul li {
+    font-size: 14px;
+  }
+  .cards img {
+    width: 100%;
+  }
+  .cards div h2,
+  .cards h3 {
+    text-align: center;
+  }
+  .pie {
+    text-align: center;
+  }
+  .contenido-footer,
+  .logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sociales img {
+    width: 70%;
+  }
+  .mapa {
+    width: 50%;
+  }
+  .card {
+    text-align: center;
+  }
+  .card .card-img-top {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+  .cards {
+    gap: 15px;
+  }
+  .tragosc .cards div h2,
+  h3 {
+    font-size: 14px;
+  }
+  .pie h2 {
+    font-size: 18px;
+  }
+  .ubicacion-section p {
+    font-size: 14px;
+  }
+  .logo-section img {
+    width: 50%;
+  }
+  .flecha {
+    display: none;
+  }
+  .card {
+    gap: 15px;
+  }
+  .card .card-title,
+  .card .card-text {
+    font-size: 12px;
+  }
+}
+h1 {
+  background-color: #000000;
+  color: #FFD700;
+  text-align: center;
+  height: min-content;
+  padding: 0px;
+}
+
+.navbar ul {
+  background-color: #000000;
+  padding: 10px;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  height: max-content;
+  list-style-type: none;
+}
+.navbar a {
+  color: #FFD700;
+  text-decoration: none;
+  display: flex;
+  font-size: large;
+}
+.navbar a:hover {
+  background-color: #000000;
+  color: #FFD700;
+}
+
+footer {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto;
+  gap: 15px;
+  padding: 20px;
+}
+
+.titulo {
+  grid-column: 1/-1;
+  color: #FFFFFF;
+  font-size: xx-large;
+  text-align: center;
+}
+
+.contenido-footer {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 30px;
+  width: 100%;
+}
+
+.redes-section {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 0px 0px 0px 0px;
+  gap: 20px;
+}
+
+.sociales {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 10px;
+}
+
+.ubicacion-section {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  font-size: x-large;
+  color: #FFFFFF;
+}
+
+.mapa {
+  margin-top: 10px;
+  width: 350px;
+  height: 300px;
+}
+
+.logo-section {
+  grid-column: 1/-1;
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+}
+
+.flecha {
+  width: min-content;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: transparent;
+  transition: transform 0.4s ease; /* Transición suave al cambiar de tamaño */
+}
+
+.flecha:hover {
+  transform: scale(1.2); /* Aumenta el tamaño de la flecha al 120% */
+}
+
+.main-index img {
+  width: 100%;
+}
+.main-index h2 {
+  color: #FFD700;
+  text-align: center;
+}
+.main-index h3 {
+  color: #FFFFFF;
+  text-align: center;
+  padding: 0;
+}
+.main-index h4 {
+  color: #FFD700;
+  text-align: center;
+}
+
+.firma {
+  color: #FFFFFF;
+  text-align: end;
+  margin-right: 20px;
+  font-size: large;
+}
+
+.main-comida {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tablas h2 {
+  color: #FFD700;
+  padding: 50px 0 0 0;
+  font-size: xx-large;
+}
+.tablas h3 {
+  color: #FFD700;
+  padding: 6px;
+  text-align: left;
+}
+.tablas p {
+  padding: 5px;
+  color: #FFFFFF;
+  font-size: large;
+}
+
+.compartir h2 {
+  color: #FFD700;
+  padding: 50px 0 0 0;
+  font-size: xx-large;
+  text-align: right;
+}
+.compartir h3 {
+  color: #FFD700;
+  padding: 10px;
+  font-size: x-large;
+  direction: rtl;
+}
+.compartir p {
+  color: #FFFFFF;
+  font-size: large;
+  direction: rtl;
+}
+
+.main-cervezas {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section-clasicas {
+  padding: 50px 0px 0px 0px;
+}
+.section-clasicas div p {
+  color: #FFD700;
+  font-size: xx-large;
+}
+.section-clasicas .clasicas {
+  padding: 10px 0px 0px 5px;
+  color: #FFFFFF;
+  width: 35%;
+  font-size: x-large;
+}
+
+.section-premiums {
+  padding: 100px 0px 0px 0px;
+}
+.section-premiums div p {
+  color: #FFD700;
+  font-size: xx-large;
+}
+.section-premiums .premium {
+  color: #FFFFFF;
+  width: 35%;
+  padding: 10px 0px 0px 5px;
+  font-size: x-large;
+}
+
+.section-especiales {
+  padding: 100px 0px 0px 0px;
+}
+.section-especiales div p {
+  color: #FFD700;
+  font-size: xx-large;
+}
+.section-especiales .especiales {
+  color: #FFFFFF;
+  width: 35%;
+  padding: 10px 0px 0px 5px;
+  font-size: x-large;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 50px 50px 10px 30px;
+}
+.cards h2 {
+  color: #FFFFFF;
+  font-size: large;
+  padding: 10px;
+  text-align: center;
+}
+.cards img {
+  height: 500px;
+  box-sizing: border-box;
+  width: max-content;
+}
+.cards h3 {
+  color: #FFD700;
+  font-size: medium;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0px 0px 0px;
+  gap: 25px;
+  align-items: center;
+  width: 100%;
+}
+.card .card-title {
+  color: #FFD700;
+}
+.card .card-text {
+  color: #FFFFFF;
+}
+.card .card-img-top {
+  width: 90%;
+}
+
+body {
+  background-color: #000000;
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=main.css.map */
