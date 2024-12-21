@@ -1,0 +1,32 @@
+h1 {
+  background-color: $color-principal;
+  color: $color-secundario;
+  text-align: center;
+  height: min-content;
+  padding: 0px;
+}
+
+.navbar {
+  ul {
+    background-color: $color-principal;
+    padding: 10px;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    height: max-content;
+    list-style-type: none;
+  }
+
+  a {
+    color: $color-secundario;
+    text-decoration: none;
+    display: flex;
+    font-size: $font-size-grande;
+
+    &:hover {
+      background-color: $color-principal;
+      color: $color-secundario;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.main-cervezas {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section-clasicas {
+  padding: 50px 0px 0px 0px;
+
+  div p {
+    color: $color-secundario;
+    font-size: xx-large;
+  }
+
+  .clasicas {
+    padding: 10px 0px 0px 5px;
+    color: $color-texto;
+    width: 35%;
+    font-size: x-large;
+  }
+}
+
+.section-premiums {
+  padding: 100px 0px 0px 0px;
+
+  div p {
+    color: $color-secundario;
+    font-size: xx-large;
+  }
+
+  .premium {
+    color: $color-texto;
+    width: 35%;
+    padding: 10px 0px 0px 5px;
+    font-size: x-large;
+  }
+}
+
+.section-especiales {
+  padding: 100px 0px 0px 0px;
+
+  div p {
+    color: $color-secundario;
+    font-size: xx-large;
+  }
+
+  .especiales {
+    color: $color-texto;
+    width: 35%;
+    padding: 10px 0px 0px 5px;
+    font-size: x-large;
+  }
+}

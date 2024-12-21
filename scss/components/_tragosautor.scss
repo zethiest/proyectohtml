@@ -1,0 +1,20 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0px 0px 0px;
+  gap: 25px;
+  align-items: center;
+  width: 100%;
+
+  .card-title {
+    color: $color-secundario;
+  }
+
+  .card-text {
+    color: $color-texto;
+  }
+
+  .card-img-top {
+    width: 90%;
+  }
+}

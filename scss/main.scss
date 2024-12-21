@@ -1,14 +1,17 @@
 // main.scss
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400..900&display=swap");
 @import 'base/variables';
-@import 'base/generales';
-@import 'base/funcionalidades';
+@import 'base/estilos';
+@import 'base/mixins';
 @import 'base/queries';
 @import 'components/header';
 @import 'components/footer';
 @import 'components/index';
 @import 'components/main';
 @import 'components/comida';
+@import 'components/cervezas';
+@import 'components/tragosclasicos';
+@import 'components/tragosautor';
 
 
 body {

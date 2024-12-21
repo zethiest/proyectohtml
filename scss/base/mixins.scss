@@ -1,0 +1,17 @@
+// _mixins.scss
+
+// Mixin con condicionales para cambiar el fondo, texto y borde
+@mixin estilo-condicional($fondo: $color-principal, $texto: $color-texto, $borde: false, $tam-borde: 1px) {
+    background-color: $fondo;
+    color: $texto;
+    
+    @if $borde == true {
+      border: $tam-borde solid $color-secundario; // Borde dorado
+    } @else {
+      border: none; // Sin borde
+    }
+    
+    padding: 10px;
+    border-radius: 5px;
+  }
+  

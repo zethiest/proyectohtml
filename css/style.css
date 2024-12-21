@@ -163,13 +163,13 @@ footer {
 }
 
 .section-clasicas div p {
-    color: white;
+    color: gold;
     font-size: xx-large;
 }
 
 .clasicas {
     padding: 10px 0px 0px 5px;
-    color: gold;
+    color: rgb(247, 247, 247);
     width: 35%;
     font-size: x-large;
 }
@@ -179,12 +179,12 @@ footer {
 }
 
 .section-premiums div p {
-    color: white;
+    color: gold;
     font-size: xx-large;
 }
 
 .premium {
-    color: gold;
+    color: rgb(255, 255, 255);
     width: 35%;
     padding: 10px 0px 0px 5px;
     font-size: x-large;
@@ -195,27 +195,22 @@ footer {
 }
 
 .section-especiales div p {
-    color: white;
+    color: gold;
     font-size: xx-large;
 }
 
 .especiales {
-    color: gold;
+    color: rgb(255, 255, 255);
     width: 35%;
     padding: 10px 0px 0px 5px;
     font-size: x-large;
 }
-
-.happy img {
-    display: flex;
-    flex-direction: flex-end;
-}
-
 /* TRAGOS CLASICOS */
 
 .cards {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     padding: 50px 50px 10px 30px;
 }
 
@@ -322,26 +317,93 @@ body {
         align-items: center;
     }
 
+    .flecha {
+        display: none;
+    }
+
     .card {
-        display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         gap: 20px;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        box-sizing: border-box;
     }
 
-    .navbar ul li {
-        margin-bottom: 10px;
+    .card-img-top {
+        width: 80%;
+        /* Ajusta la imagen para que ocupe el 80% del ancho en pantallas más pequeñas */
     }
 
-    .cards {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+    .card-title {
+        font-size: 1.25rem;
+        /* Ajusta el tamaño del título */
+    }
+
+    .card-text {
+        font-size: 0.875rem;
+        /* Ajusta el tamaño del texto */
     }
 }
 
-@media screen and (max-width: 480px) {
+.navbar ul li {
+    margin-bottom: 10px;
+}
+
+.cards {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    /* Asegura que las tarjetas se centren */
+    gap: 20px;
+    box-sizing: border-box;
+
+}
+
+
+.main-comida {
+    flex-direction: column;
+    /* Apilamos las secciones */
+    align-items: center;
+    gap: 20px;
+    /* Añadimos separación entre las secciones */
+}
+
+.tablas,
+.compartir {
+    width: 80%;
+    /* Las secciones ocupan el 80% del ancho */
+}
+
+.tablas h2,
+.compartir h2 {
+    font-size: 2rem;
+    /* Ajustamos el tamaño */
+    text-align: center;
+}
+
+.tablas h3,
+.compartir h3 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.tablas p,
+.compartir p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 760px) {
     .navbar ul {
         padding: 0;
+    }
+
+    .flecha {
+        display: none;
     }
 
     .navbar ul li {
@@ -393,7 +455,7 @@ body {
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 480px) {
     h1 {
         font-size: 24px;
     }

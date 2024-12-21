@@ -1,0 +1,44 @@
+// styles.scss
+
+@import 'variables';  // Importa el archivo de variables
+@import 'mixins';     // Importa el archivo de mixins
+
+/* Aquí irían los estilos generales de tu sitio */
+h1 {
+  background-color: $color-principal;
+  color: $color-secundario;
+  text-align: center;
+  height: min-content;
+  padding: 0px;
+}
+
+.navbar {
+  ul {
+    @include estilo-condicional($color-principal, $color-secundario, false);  // Aplica el mixin
+    padding: 10px;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    height: max-content;
+  }
+
+  a {
+    color: $color-secundario;
+    text-decoration: none;
+    display: flex;
+    font-size: $font-size-grande;
+  }
+  
+  a:hover {
+    background-color: $color-principal;
+    color: $color-secundario;
+  }
+}
+
+// Agregar más estilos para otras secciones utilizando el mixin
+.header {
+  @include estilo-condicional($color-secundario, $color-texto, true, 2px); // Fondo dorado, texto blanco, con borde dorado de 2px
+  text-align: center;
+  padding: 20px;
+}

@@ -1,0 +1,25 @@
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 50px 50px 10px 30px;
+
+  h2 {
+    color: $color-texto;
+    font-size: large;
+    padding: 10px;
+    text-align: center;
+  }
+
+  img {
+    height: 500px;
+    box-sizing: border-box;
+    width: max-content;
+  }
+
+  h3 {
+    color: $color-secundario;
+    font-size: medium;
+    text-align: center;
+  }
+}

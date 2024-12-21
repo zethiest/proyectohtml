@@ -57,8 +57,12 @@ footer {
 }
 
 .flecha {
+    width: min-content;
     position: fixed;
     bottom: 20px;
     right: 20px;
     background-color: transparent;
+    transition: transform 0.4s ease; /* Transición suave al cambiar de tamaño */
 }
+.flecha:hover {
+    transform: scale(1.2); /* Aumenta el tamaño de la flecha al 120% */}

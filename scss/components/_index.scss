@@ -1,61 +1,28 @@
-// _index.scss
-
-// Estilos generales para el índice 
-h1 {
-    background-color: $color-principal;
-    color: $color-secundario;
-    text-align: center;
-    height: min-content;
-    padding: 0px;
-  }
-  
-  .navbar ul {
-    background-color: $color-principal;
-    padding: 10px;
-    margin: 0;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-evenly;
-    height: max-content;
-
-  }
-  
-  .navbar a {
-    color: $color-secundario;
-    text-decoration: none;
-    display: flex;
-    font-size: $font-size-grande;
-  }
-  
-  .navbar a:hover {
-    background-color: $color-principal;
-    color: $color-secundario;
-  }
-  
-  .main-index img {
+.main-index {
+  img {
     width: 100%;
   }
-  
-  .main-index h2 {
+
+  h2 {
     color: $color-secundario;
     text-align: center;
   }
-  
-  .main-index h3 {
+
+  h3 {
     color: $color-texto;
     text-align: center;
     padding: 0;
   }
-  
-  .main-index h4 {
+
+  h4 {
     color: $color-secundario;
     text-align: center;
   }
-  
-  .firma {
-    color: $color-texto;
-    text-align: end;
-    margin-right: 20px;
-    font-size: $font-size-grande;
-  }
-  
+}
+
+.firma {
+  color: $color-texto;
+  text-align: end;
+  margin-right: 20px;
+  font-size: $font-size-grande;
+}
